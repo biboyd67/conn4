@@ -1,0 +1,89 @@
+@CHARSET "ISO-8859-1";
+
+table {
+	border: 1px;
+	background-color: darkgray;
+}
+
+th {
+	background-color: dimgray;
+}
+
+h1, h2, h4 {
+	font-family: monospace;
+}
+
+.title {
+	padding: 20px;
+	background-color: gainsboro;
+}
+
+.whitecircle {
+	width: 40px;
+	height: 40px;
+	background: white;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.bluecircle {
+	width: 40px;
+	height: 40px;
+	background: blue;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.yellowcircle {
+	width: 40px;
+	height: 40px;
+	background: yellow;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+@keyframes yellowBlinking {
+	from {background: yellow;}
+	to {background: white;}
+}
+
+.yellowcircleBlinking {
+	width: 40px;
+	height: 40px;
+	background: yellow;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	animation-name: yellowBlinking;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blueBlinking {
+	from {background: blue;}
+	to {background: white;}
+}
+
+.bluecircleBlinking {
+	width: 40px;
+	height: 40px;
+	background: yellow;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	animation-name: blueBlinking;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+}
+
+.graycircle {
+	width: 40px;
+	height: 40px;
+	background: gray;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}

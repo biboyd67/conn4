@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Connect 4</title>
+
+<link rel="stylesheet" type="text/css" href="c4.css">
+<script type="text/javascript" src="c4.js"></script>
+
+</head>
+<body onload="init();">
+
+	<header>
+
+		<h1 class="title">FOUR IN A ROW</h1>
+
+
+	</header>
+
+	<div>
+		<div id="c4"
+			style="float: left; margin-left: 50px; margin-right: 25px">
+			<h4>Let's play!</h4>
+			<hr>
+			<table style="background-color: white">
+				<tr>
+					<td>Player A:</td>
+					<td><div class="yellowcircle"></div></td>
+				</tr>
+				<tr>
+					<td>Player B:</td>
+					<td><div class="bluecircle"></div></td>
+				</tr>
+
+			</table>
+			<hr>
+			<input type="button" value="New Game" onclick="init();" />
+		</div>
+
+		<div id="c4board" style="margin-top: 50px">
+			<h2 id="toggleTurn">Your turn: Player A</h2>
+			<table>
+				<thead>
+					<tr>
+						<th><div id="col1" class="graycircle"
+								onmouseenter="toggleColorEnter('col1');"
+								onmouseleave="toggleColorLeave('col1');" onclick="dropDisc(1);"></div></th>
+						<th><div id="col2" class="graycircle"
+								onmouseenter="toggleColorEnter('col2');"
+								onmouseleave="toggleColorLeave('col2');" onclick="dropDisc(2);"></div></th>
+						<th><div id="col3" class="graycircle"
+								onmouseenter="toggleColorEnter('col3');"
+								onmouseleave="toggleColorLeave('col3');" onclick="dropDisc(3);"></div></th>
+						<th><div id="col4" class="graycircle"
+								onmouseenter="toggleColorEnter('col4');"
+								onmouseleave="toggleColorLeave('col4');" onclick="dropDisc(4);"></div></th>
+						<th><div id="col5" class="graycircle"
+								onmouseenter="toggleColorEnter('col5');"
+								onmouseleave="toggleColorLeave('col5');" onclick="dropDisc(5);"></div></th>
+						<th><div id="col6" class="graycircle"
+								onmouseenter="toggleColorEnter('col6');"
+								onmouseleave="toggleColorLeave('col6');" onclick="dropDisc(6);"></div></th>
+						<th><div id="col7" class="graycircle"
+								onmouseenter="toggleColorEnter('col7');"
+								onmouseleave="toggleColorLeave('col7');" onclick="dropDisc(7);"></div></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><div id="0_0" class="whitecircle"></div></td>
+						<td><div id="0_1" class="whitecircle"></div></td>
+						<td><div id="0_2" class="whitecircle"></div></td>
+						<td><div id="0_3" class="whitecircle"></div></td>
+						<td><div id="0_4" class="whitecircle"></div></td>
+						<td><div id="0_5" class="whitecircle"></div></td>
+						<td><div id="0_6" class="whitecircle"></div></td>
+					</tr>
+					<tr>
+						<td><div id="1_0" class="whitecircle"></div></td>
+						<td><div id="1_1" class="whitecircle"></div></td>
+						<td><div id="1_2" class="whitecircle"></div></td>
+						<td><div id="1_3" class="whitecircle"></div></td>
+						<td><div id="1_4" class="whitecircle"></div></td>
+						<td><div id="1_5" class="whitecircle"></div></td>
+						<td><div id="1_6" class="whitecircle"></div></td>
+					</tr>
+					<tr>
+						<td><div id="2_0" class="whitecircle"></div></td>
+						<td><div id="2_1" class="whitecircle"></div></td>
+						<td><div id="2_2" class="whitecircle"></div></td>
+						<td><div id="2_3" class="whitecircle"></div></td>
+						<td><div id="2_4" class="whitecircle"></div></td>
+						<td><div id="2_5" class="whitecircle"></div></td>
+						<td><div id="2_6" class="whitecircle"></div></td>
+					</tr>
+					<tr>
+						<td><div id="3_0" class="whitecircle"></div></td>
+						<td><div id="3_1" class="whitecircle"></div></td>
+						<td><div id="3_2" class="whitecircle"></div></td>
+						<td><div id="3_3" class="whitecircle"></div></td>
+						<td><div id="3_4" class="whitecircle"></div></td>
+						<td><div id="3_5" class="whitecircle"></div></td>
+						<td><div id="3_6" class="whitecircle"></div></td>
+					</tr>
+					<tr>
+						<td><div id="4_0" class="whitecircle"></div></td>
+						<td><div id="4_1" class="whitecircle"></div></td>
+						<td><div id="4_2" class="whitecircle"></div></td>
+						<td><div id="4_3" class="whitecircle"></div></td>
+						<td><div id="4_4" class="whitecircle"></div></td>
+						<td><div id="4_5" class="whitecircle"></div></td>
+						<td><div id="4_6" class="whitecircle"></div></td>
+					</tr>
+					<tr>
+						<td><div id="5_0" class="whitecircle"></div></td>
+						<td><div id="5_1" class="whitecircle"></div></td>
+						<td><div id="5_2" class="whitecircle"></div></td>
+						<td><div id="5_3" class="whitecircle"></div></td>
+						<td><div id="5_4" class="whitecircle"></div></td>
+						<td><div id="5_5" class="whitecircle"></div></td>
+						<td><div id="5_6" class="whitecircle"></div></td>
+					</tr>
+				<tbody>
+			</table>
+		</div>
+
+	</div>
+
+</body>
+</html>
