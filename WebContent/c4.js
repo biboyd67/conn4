@@ -1,4 +1,4 @@
-//var defaultPlayer = 'A'; //Player A is the the first player to drop.
+
 	var playerA;
 	var playerB;
 	var playerTurn;
